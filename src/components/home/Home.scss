@@ -1,0 +1,115 @@
+
+
+.home{
+    width:100%;
+    border:1px solid #555;
+    margin:10px auto;
+    max-width: 360px;
+    box-shadow: 0 0 150px #000;
+    position: relative;
+    background-image: url("https://static.pexels.com/photos/35884/amazing-beautiful-beauty-blue.jpg");
+    background-size: cover;
+    background-position: 100%;
+    color:#fff;
+    border-radius: 4px;
+
+    animation: fadeIn 2s ease-in-out forwards;
+}   
+
+
+@keyframes fadeIn {
+    0%{
+        transform: rotate(145deg) translate(-1500px)
+    }
+
+    100%{
+        transform: rotate(0deg) translate(0px)
+    }
+}
+
+section{
+    margin-bottom: 9em;
+    // background: rgba(155, 89, 182, 0.4);
+    
+    
+}
+
+h1{
+    margin-top: 5em;
+}
+
+h2, h1, h3, section > p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+section > div{
+    margin:0 auto;
+    padding:20px;
+}
+.daily{
+    // border:1px solid #555;
+    width:20%;
+    display: inline-block;
+    margin:7px;
+    text-align: center;
+
+    button{
+        border-radius: 50%;
+        width:40px;
+        height:40px;
+    }
+
+    p, button{
+        margin-top:10px;
+    }
+
+    p{
+        font-size: 0.8em;
+    }
+
+    .fa-bolt{
+        font-size: 30px;
+       
+    }
+}
+
+.sidebar{
+    position: absolute;
+    top:20px;
+    right:20px;
+    z-index: 99;
+    opacity: 0;
+    animation: sidebarAnimate 1s ease-in-out forwards 2s;
+   
+    
+    & > span{
+        background: #fff;
+        width:32px;
+        height:3px;
+        display: block;
+        border-radius: 10px;
+        margin-top:3px;
+        position: relative;
+    }
+
+    & > span:last-child{
+        width:22px;
+        float: right;
+    }
+}
+
+@keyframes sidebarAnimate {
+    0%{
+        opacity: 0;
+        transform: translate(100px)
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0px)
+    }
+}
+
+
